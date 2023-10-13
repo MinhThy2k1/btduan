@@ -1,0 +1,110 @@
+.header-containerv1 {
+  background-color: #f4f4f4;
+  padding: 0 60px;
+  align-items: center;
+}
+.header-top-right {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: right;
+  padding-top: 5px;
+  gap: 20px;
+}
+.header-text-help,
+.header-official-store,
+.header-language {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.header-official-store {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.header-language {
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  &-english {
+    border-right: 1px solid black;
+    padding-right: 6px;
+    margin-bottom: 0;
+  }
+  &-vn {
+    font-weight: bold;
+    margin-bottom: 0;
+    align-items: center;
+  }
+}
+
+/*phan duoi header-main*/
+.header-logo {
+  align-items: center;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.header-contentv1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+}
+.header-titlev1 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+.header-titlev1-item {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  position: relative;
+  transition: all 0.2s linear;
+  &:hover {
+    color: #ffffff;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all 0.2s linear;
+  }
+  &:hover:after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+}
+
+.header-mainv1 {
+  background-color: #f31e1e;
+  align-items: center;
+}
+.header-end {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  padding-top: 20px;
+  position: relative;
+  left: 2%;
+  a:hover {
+    color: white;
+  }
+  &-icon {
+    cursor: pointer;
+    &:hover {
+      color: white;
+    }
+  }
+}
